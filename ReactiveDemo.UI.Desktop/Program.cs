@@ -1,8 +1,8 @@
-using ClassLibrary1;
+using ReactiveDemo;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace WinFormsApp1;
+namespace ReactiveDemo.UI;
 
 static class Program
 {

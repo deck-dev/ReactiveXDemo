@@ -1,8 +1,8 @@
 ﻿using System.Reactive.Linq;
 using Accessibility;
-using ClassLibrary1;
+using ReactiveDemo;
 
-namespace WinFormsApp1;
+namespace ReactiveDemo.UI;
 
 public static class ControlExtensions
 {

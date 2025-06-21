@@ -1,8 +1,8 @@
 using System.Reactive.Linq;
-using ClassLibrary1;
+using ReactiveDemo;
 using Microsoft.Extensions.Logging;
 
-namespace WinFormsApp1;
+namespace ReactiveDemo.UI;
 
 public partial class FormMain : Form
 {

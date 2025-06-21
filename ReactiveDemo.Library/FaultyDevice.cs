@@ -2,7 +2,7 @@
 using System.Reactive.Subjects;
 using System.Runtime.CompilerServices;
 
-namespace ClassLibrary1;
+namespace ReactiveDemo;
 
 public class FaultyDevice : IDevice, IDisposable
 {

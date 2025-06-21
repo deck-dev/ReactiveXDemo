@@ -1,4 +1,4 @@
-﻿namespace WinFormsApp1;
+﻿namespace ReactiveDemo.UI;
 
 partial class FormMain
 {

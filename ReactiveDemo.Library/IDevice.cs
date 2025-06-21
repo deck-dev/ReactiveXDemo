@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace ClassLibrary1;
+namespace ReactiveDemo;
 
 public interface IDevice
 {
