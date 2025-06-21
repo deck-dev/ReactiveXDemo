@@ -1,8 +1,6 @@
-using System.Reactive.Linq;
-using ReactiveDemo;
 using Microsoft.Extensions.Logging;
 
-namespace ReactiveDemo.UI;
+namespace ReactiveXDemo.UI;
 
 public partial class FormMain : Form
 {

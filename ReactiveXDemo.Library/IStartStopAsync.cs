@@ -1,4 +1,4 @@
-﻿namespace ReactiveDemo;
+﻿namespace ReactiveXDemo;
 
 public interface IStartStopAsync
 {

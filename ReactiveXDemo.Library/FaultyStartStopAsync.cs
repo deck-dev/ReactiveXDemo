@@ -1,7 +1,7 @@
 ﻿using System.Reactive.Linq;
 using System.Reactive.Subjects;
 
-namespace ReactiveDemo;
+namespace ReactiveXDemo;
 
 public class FaultyStartStopAsync : IStartStopAsync, IDisposable
 {

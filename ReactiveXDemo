@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactiveDemo.UI.Desktop", "ReactiveDemo.UI.Desktop\ReactiveDemo.UI.Desktop.csproj", "{BE083A37-0FFD-4685-95C3-C34FBE890B52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactiveXDemo.UI.Desktop", "ReactiveXDemo.UI.Desktop\ReactiveXDemo.UI.Desktop.csproj", "{BE083A37-0FFD-4685-95C3-C34FBE890B52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactiveDemo.Library", "ReactiveDemo.Library\ReactiveDemo.Library.csproj", "{9072FF9E-DC43-4180-B061-B888CA003258}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactiveXDemo.Library", "ReactiveXDemo.Library\ReactiveXDemo.Library.csproj", "{9072FF9E-DC43-4180-B061-B888CA003258}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,8 +1,7 @@
-using ReactiveDemo;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace ReactiveDemo.UI;
+namespace ReactiveXDemo.UI;
 
 static class Program
 {

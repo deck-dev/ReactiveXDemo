@@ -6,11 +6,11 @@
         <Nullable>enable</Nullable>
         <UseWindowsForms>true</UseWindowsForms>
         <ImplicitUsings>enable</ImplicitUsings>
-        <RootNamespace>ReactiveDemo.UI</RootNamespace>
+        <RootNamespace>ReactiveXDemo.UI</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ReactiveDemo.Library\ReactiveDemo.Library.csproj" />
+      <ProjectReference Include="..\ReactiveXDemo.Library\ReactiveXDemo.Library.csproj" />
     </ItemGroup>
 
     <ItemGroup>

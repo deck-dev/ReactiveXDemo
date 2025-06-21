@@ -1,4 +1,4 @@
-﻿namespace ReactiveDemo.UI;
+﻿namespace ReactiveXDemo.UI;
 
 partial class FormMain
 {

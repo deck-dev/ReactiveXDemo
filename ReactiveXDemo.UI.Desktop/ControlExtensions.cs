@@ -1,4 +1,4 @@
-﻿namespace ReactiveDemo.UI;
+﻿namespace ReactiveXDemo.UI;
 
 public static class ControlExtensions
 {
