@@ -6,22 +6,22 @@ namespace ReactiveDemo.UI;
 
 public static class ControlExtensions
 {
-    public static void BindStart(this Button button, IDevice device)
+    public static void BindStart(this Button button, IStartStopAsync startStopAsync)
     {
-        UiUpdateState(device.IsRunning);
-        _ = device.RunningStateChangedEvent().SubscribeAsync(UiUpdateState);
+        UiUpdateState(startStopAsync.IsRunning);
+        _ = startStopAsync.RunningStateChangedEvent().SubscribeAsync(UiUpdateState);
         
         button.Click += async (_, _) =>
         {
-            if (device.IsRunning) return;
+            if (startStopAsync.IsRunning) return;
 
-            var errorEvent = await device.ExecutionErrorEvent()
+            var errorEvent = await startStopAsync.ExecutionErrorEvent()
                 .SubscribeAsync((_) => UiError());
 
             try
             {
                 UiReset();
-                await device.StartAsync(CancellationToken.None);
+                await startStopAsync.StartAsync(CancellationToken.None);
             }
             finally
             {
@@ -51,22 +51,22 @@ public static class ControlExtensions
         }
     }
 
-    public static void BindStop(this Button button, IDevice device)
+    public static void BindStop(this Button button, IStartStopAsync startStopAsync)
     {
-        UiUpdateState(device.IsRunning);
-        _ = device.RunningStateChangedEvent().SubscribeAsync(UiUpdateState);
+        UiUpdateState(startStopAsync.IsRunning);
+        _ = startStopAsync.RunningStateChangedEvent().SubscribeAsync(UiUpdateState);
         
         button.Click += async (_, _) =>
         {
-            if (!device.IsRunning) return;
+            if (!startStopAsync.IsRunning) return;
 
-            var errorEvent = await device.ExecutionErrorEvent()
+            var errorEvent = await startStopAsync.ExecutionErrorEvent()
                 .SubscribeAsync((_) => UiError());
 
             try
             {
                 UiReset();
-                await device.StopAsync(CancellationToken.None);
+                await startStopAsync.StopAsync(CancellationToken.None);
             }
             finally
             {
@@ -96,23 +96,23 @@ public static class ControlExtensions
         }
     }
 
-    public static void BindToggle(this Button button, IDevice device)
+    public static void BindToggle(this Button button, IStartStopAsync startStopAsync)
     {
-        UiUpdateState(device.IsRunning);
-        _ = device.RunningStateChangedEvent().SubscribeAsync(UiUpdateState);
+        UiUpdateState(startStopAsync.IsRunning);
+        _ = startStopAsync.RunningStateChangedEvent().SubscribeAsync(UiUpdateState);
 
         button.Click += async (_, _) =>
         {
-            var errorEvent = await device.ExecutionErrorEvent()
+            var errorEvent = await startStopAsync.ExecutionErrorEvent()
                 .SubscribeAsync((_) => UiError());
 
             try
             {
                 UiReset();
-                if (device.IsRunning)
-                    await device.StopAsync(CancellationToken.None);
+                if (startStopAsync.IsRunning)
+                    await startStopAsync.StopAsync(CancellationToken.None);
                 else
-                    await device.StartAsync(CancellationToken.None);
+                    await startStopAsync.StartAsync(CancellationToken.None);
             }
             finally
             {

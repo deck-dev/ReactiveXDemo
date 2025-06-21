@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 
 namespace ReactiveDemo;
 
-public class FaultyDevice : IDevice, IDisposable
+public class FaultyStartStopAsync : IStartStopAsync, IDisposable
 {
     public bool IsRunning { get; private set; }
 

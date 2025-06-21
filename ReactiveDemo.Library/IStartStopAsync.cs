@@ -2,7 +2,7 @@
 
 namespace ReactiveDemo;
 
-public interface IDevice
+public interface IStartStopAsync
 {
     bool IsRunning { get; }
     Task StartAsync(CancellationToken cancellationToken);

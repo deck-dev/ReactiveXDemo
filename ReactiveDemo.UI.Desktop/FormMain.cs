@@ -7,15 +7,15 @@ namespace ReactiveDemo.UI;
 public partial class FormMain : Form
 {
     private readonly ILogger<FormMain> _logger;
-    private readonly IDevice _device;
+    private readonly IStartStopAsync _startStopAsync;
 
     public FormMain(
-        IDevice device,
+        IStartStopAsync startStopAsync,
         ILogger<FormMain> logger)
     {
         InitializeComponent();
         
-        _device = device;
+        _startStopAsync = startStopAsync;
         _logger = logger;
 
         // var timer = Observable.Timer(TimeSpan.Zero, TimeSpan.FromSeconds(2));
@@ -32,8 +32,8 @@ public partial class FormMain : Form
     {
         base.OnLoad(e);
         
-        btnToggle.BindToggle(_device);
-        btnStart.BindStart(_device);
-        btnStop.BindStop(_device);
+        btnToggle.BindToggle(_startStopAsync);
+        btnStart.BindStart(_startStopAsync);
+        btnStop.BindStop(_startStopAsync);
     }
 }

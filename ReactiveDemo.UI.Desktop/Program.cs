@@ -19,7 +19,7 @@ static class Program
         var builder = new HostApplicationBuilder();
 
         builder.Services.AddScoped<FormMain>();
-        builder.Services.AddSingleton<IDevice, FaultyDevice>();
+        builder.Services.AddSingleton<IStartStopAsync, FaultyStartStopAsync>();
 
        var host = builder.Build();
         
