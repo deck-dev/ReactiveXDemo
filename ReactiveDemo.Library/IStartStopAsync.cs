@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace ReactiveDemo;
+﻿namespace ReactiveDemo;
 
 public interface IStartStopAsync
 {

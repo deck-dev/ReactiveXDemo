@@ -1,8 +1,4 @@
-﻿using System.Reactive.Linq;
-using Accessibility;
-using ReactiveDemo;
-
-namespace ReactiveDemo.UI;
+﻿namespace ReactiveDemo.UI;
 
 public static class ControlExtensions
 {
